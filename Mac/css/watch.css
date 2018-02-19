@@ -1,0 +1,245 @@
+/*=== CSS RESET ===*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {height: 100%}
+body {background: #fff;}
+
+header, #n1, section, footer {
+    margin-bottom: 20px;
+}
+
+/* === NAVIGATION ===*/
+
+#n1 {
+    opacity: 0.8; /*add transparency*/
+    display: flex; /*add flex box for navigation*/
+    justify-content: center; /*align text in the middle of the lign*/
+    align-items: center; /* align text verticaly*/
+    width: 100%;
+    position: fixed; /*fix menu on top of the website*/
+    top: 0;
+    left: 0;
+    background: #333;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#n1 a:link{
+    color: #fff;
+    text-align: center; /*center link text in the middle */
+/*    padding: 10px 20px;*/
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+#n1 a:visited {
+    color:#fff;
+}
+
+#n1 a:hover {
+    background: #333;
+    color:grey; 
+}
+
+#n1 a:active{
+    color:#fff;
+}
+
+#n1 a.current {
+    color:grey;
+}
+
+/*=== TOP MENU ===*/
+.menu{}
+
+#top_menu {
+/* all objects are relative/mutual in one container */
+    margin-top:80px;
+    position: relative;
+/*    width: 60%;*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section #left{
+    text-align: left;
+}
+
+section #right {
+/* this section is absolute to section left  */
+
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+/*=== TOP MENU NAVIGATION === */
+#right a:active {
+    color: #111;
+}
+
+#right a:link{
+    color: #111;
+    text-decoration: none;
+/*    */
+    padding: 10px;
+}
+
+#right a:visited {
+    color:#111;
+}
+
+#right a:hover {
+    color:#111; 
+    text-decoration: underline;
+}
+
+#right a:active{
+    color:#111;
+}
+
+/*=== BUTTON ===*/
+.button {
+    background-color: deepskyblue;
+/*    border: none;*/
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+
+/* === BODY === */
+
+section, h2, h1, h3, a, p, figure {
+    text-align: center;
+}
+
+/*=== CONFIGURE STYLE FOR ALL SECTIONS ===*/
+
+section h2{
+    font-size: 35px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    display: block;
+    color: #111;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    width: 60%;
+    text-transform: capitalize;
+}
+
+section h1{
+    font-size: 65px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #111;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-transform: capitalize; /*capitalize first letters*/
+}
+
+section img{
+    width: 60%;
+    height: auto;
+}
+
+/*align text in the middle of the screen*/
+article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+
+article p{
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 22px;
+    line-height: 1.45455;
+    font-weight: 300;
+    letter-spacing: .016em;
+    margin-bottom: 20px;
+}
+
+/*=== SECTON 0 ===*/
+/* move image down from the text*/
+#s0 img {
+    margin-top: 40px;
+}
+
+/*=== SECTION 1 ===*/
+#s1{
+    background: #f2f2f2;
+/* make some space between two sections*/
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+/*=== SECTION 3 ===*/
+#s3 figure {
+    margin-top: 100px;
+    width: auto;
+    height: auto;
+}
+
+#s3 #box img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*=== FOOTER ===*/
+footer{
+    text-align: center;
+}
+
+footer hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* === NAVIGATION FOOTER === */
+#n2 a:active {
+    color: #111;
+}
+
+#n2 a:link{
+    color: #111;
+    text-decoration: none;
+}
+
+#n2 a:visited {
+    color:#111;
+}
+
+#n2 a:hover {
+    color:#111; 
+    text-decoration: underline;
+}
+
+#n2 a:active{
+    color:#111;
+}
+
+
+
+
