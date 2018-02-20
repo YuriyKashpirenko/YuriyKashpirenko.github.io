@@ -79,7 +79,6 @@ section #right {
 #right a:active {
     color: #111;
 }
-
 #right a:link{
     color: #111;
     text-decoration: none;
@@ -113,7 +112,6 @@ section #right {
 }
 
 
-
 /*=== BODY ===*/
 section{
     text-align: center;
@@ -133,7 +131,7 @@ h2{
 
 
 section img{
-    width: 60%;
+    width: 30%;
     height: auto;
     margin-top: 50px;
     margin-bottom: 50px;
