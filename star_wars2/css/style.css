@@ -1,0 +1,194 @@
+/*=== CSS RESET ===*/
+*{
+    margin: 0;
+    padding: 0;
+    /*=== FIX PROBLEM WITH BOX-SIZING: ADD PADDING AND/OR MARGIN*/
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(swbackground.jpg);
+    width: 100%;
+    height: auto;
+/*    background-size: cover*/
+}
+
+div{
+    width: 80%;
+    max-width: 1200px;
+    background-color: darkgray;
+/*=== ALIGN TEXT IN THE MIDDLE - MARGIN*/
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+header, nav, article, article p, figure, img, iframe{
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 58px;
+    text-transform: capitalize;
+    color: crimson; 
+}
+
+header h2{
+    font-family: georgia times, serif;
+    font-size: 38px;
+    text-transform: capitalize;
+    font-style:italic;
+    color:dimgrey;
+    
+}
+
+/*=== NAV INFO ===*/
+nav{
+    background: darkgray;
+    border: 1px solid black;
+    align-content: center;
+    text-align: center;
+}
+
+/*
+nav .trapezoid {
+    border-bottom: 50px solid;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+*/
+
+nav a:link{
+    display: inline-block;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration:none;
+}
+
+nav a:visited{
+    color: crimson;
+}
+
+nav a:hover{
+    background: #333;
+    color:#eee;
+}
+
+nav a:active{
+    background: cadetblue;
+    color:aliceblue;
+}
+
+/*=== NAV CLASS CURRENT ===*/
+nav a.current{
+    background: crimson;
+    color: #fff;
+}
+
+
+
+/*=== FIGURE IMAGE ===*/
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+figcaption{
+    font-family: georgia, serif;
+    color: dimgray;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*=== ARTICLE INFO ===*/
+article h1{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: crimson; 
+}
+
+article h2{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: crimson;
+}
+
+article p{
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 16px;
+    text-transform:first-letter;
+    color: #333;
+/*    margin-bottom: 20px;*/
+    line-height: 20px;
+    text-align: justify;
+}
+
+ .pull_quote {
+/*    width: auto;*/
+/*    height: auto;*/
+    font-family: gerogia, serif;
+    font-size: 28px;
+    background: crimson;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-left: #333 solid 20px;
+    border-right: #333 solid 20px;
+    width: 300px;
+    line-height: 30px;
+    float: right;
+    margin-left: 10px;
+    
+    
+}
+
+article a:link {
+    font-family: georgia, serif;
+    color:crimson;
+    text-decoration: none;
+}
+
+article a:visited {
+    color: #666;
+    border-bottom: 1px #666 dotted;
+}
+
+article a:hover {
+    color: cadetblue;
+    border-bottom: 1px cadetblue dotted;
+}
+
+/*=== ARTICLE IMAGE ===*/
+article #img1 {
+    width: 100%;
+    height: auto;
+/*    float: right;*/
+/*    margin: 1px 10px 2px 0px;*/
+}
+
+article #img2{
+    float: left;
+/*    fix problem with resizing the image, use widh and max-width*/
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 1px 10px 2px 0px;
+}
+
+footer{
+/*    background: darkgrey;*/
+    background: #333;
+    color: aliceblue;
+    padding: 10px 20px;
+    text-align: center;
+    border-right: crimson solid 20px;
+    border-left: crimson solid 20px;
+    border-bottom: 1px crimson  dotted;
+}
