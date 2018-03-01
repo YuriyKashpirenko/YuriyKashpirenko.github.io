@@ -1,0 +1,231 @@
+/*=== IMPORT STYLE ===*/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+/*=== RESET ALL ===*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {height: 100%;}
+
+
+/* === NAVIGATION === */
+#n1 {
+/*    background-color: rgba(black,0,0, .75);*/
+    background-color:rgba(192,192,192,0.3);
+    display: flex;
+    flex-flow: row wrap;
+/*    justify-content: center;*/
+    align-items: center; /* align text verticaly */
+    padding: 10px;
+    width: 100%;
+    position: fixed; /*make navigation positon fixed on top of the screen*/
+    text-transform:uppercase; /*uppercase letters*/
+    font-weight: bold; /*make text bold in navigation*/
+
+}
+
+#n1 a:link{
+    color:#fff;
+    font-family: Gotham Book,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Roboto;
+    text-align: center; /* align text in the middle  */
+    text-decoration: none;
+    flex-grow:1;
+}
+
+#n1 a:visited{
+    color:#fff;
+}
+
+#n1 a:hover{
+    color: grey;
+}
+
+#n1 a:active{
+    color: #fff;
+}
+
+#n1 a.current {
+    color: grey;
+}
+
+/*=== BODY ===*/
+
+/*=== SECTION 1 ===*/
+#s1{
+    background-image: url(../images/tesla/t-ms6.jpg);
+    background-size: cover;
+    background-position: center;
+
+    width: 100%; /* set width of section to 100% of the screen */
+    min-height: 100%; /* set minimum height of the section to 100% of the screen */
+    height: auto; /*other: resize the height to auto*/
+    padding: 10px;
+    display: flex;
+    
+}
+
+#s1 hgroup {
+/*    background: grey;*/
+    /*add transperency*/
+/*    opacity: 0.5; */
+    padding: 30px;
+/*    display: flex;*/
+    margin: auto; /*centers a flex item horizontaly and verticaly inside flex-container*/
+    text-transform: uppercase;
+}
+
+#s1 hgroup h2 {
+    color: #fff; /*has to be white*/
+    font-family: 'Gotham Light', Robato;
+    font-size: 32px;
+    font-weight: normal;
+    
+/*  align text in the middle  */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* === NAVIGATION 2 ===*/
+#s1 .flex {
+    display: flex; /*flex box*/
+    flex-flow: row wrap; /*wrap*/
+    justify-content: center; /*align text in the middle of the lign*/
+/*    align-content: center; */
+    align-items: center; /* align text verticaly*/
+    text-align: center;
+}
+
+#s1 .flex .b1 {
+/*
+    background-color: grey;
+    opacity: 0.5; 
+*/
+    background-color:rgba(192,192,192,0.3);
+    color: #fff;
+    font-family: Gotham Medium,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Robato;
+    font-weight: bold; /*or normal*/
+    padding: 10px 20px;
+    width: 200px;
+    margin: 5px;
+    text-transform: uppercase;
+    transition: all .10s;
+}
+#s1 .flex .b1 {
+/*    background-color: #fff;*/
+/*    border: 2px solid #fff;*/
+}
+
+#s1 .flex .b1:hover {
+/*    background-color: #fff;*/
+    border: 2px solid #fff;
+}
+
+/*=== NEWSLETTER LINK ===*/
+#s1 a:link{
+    text-decoration: none;
+}
+
+#s1 a:visited{
+    color: #fff;
+}
+
+#s1 a:hover{
+    color: red;
+}
+
+/*=== HGROUP ===*/
+#s1 hgroup h3 {
+    color: #fff;
+    font-family: Gotham Book,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Roboto, Roboto Condensed';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+
+/*    margin: auto;*/
+}
+
+/*=== SECTION 2 ===*/
+#s2 {
+	display: flex;
+	flex-flow: row wrap;
+	/*font-weight: bold;*/
+	text-align: center;
+}
+
+.main {
+    background: #fff;
+    text-align: left;
+    padding: 20px;
+    flex: 1 100%;/*1 is flex grow and 100% is flex basis */
+	/* 1 value is flex grow; 2 value is for shrink; 3 value is flex basis*/
+}
+
+/* === MOBILE ===*/
+.aside1 {
+    background: green;
+    padding: 20px;
+    flex: 1 100%;
+}
+
+.aside2 {
+    background: red;
+    padding: 20px;
+    flex: 1 100%;
+}
+
+footer {
+    background-color: grey;
+}
+
+/* === TABLET ===*/
+@media all and (min-width: 600px){
+    .aside {flex: 1 auto;}
+    #s1 hgroup h2 {font-size: 52px;}
+    #s1 hgroup h3 {font-size: 22px;}
+    
+/*    #s1 hgroup */
+}
+
+/*=== DESKTOP ===*/
+@media all and (min-width:800px){
+    .main {flex: 5 0px;
+        background: #fff;}
+    .aside1 {order:1;}
+    .main {order:2;}
+    .aside2 {order:3;}
+    footer{order:4;}
+    #s2 hgroup h2 {font-size: 10vmax;}
+    #s2 hgroup h3 {font-size: 32px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
