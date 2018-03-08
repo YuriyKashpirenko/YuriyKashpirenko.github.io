@@ -70,7 +70,7 @@ body {background: #fff;}
     text-transform: capitalize;
 }
 
-hgroup h3{
+h3{
     font-family: Gotham Light,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: normal;
     font-size: 30px;
@@ -80,7 +80,7 @@ hgroup h3{
     text-align: center;
 }
 
-hgroup h2{
+h2{
     font-family: Gotham Light,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 40px;
     line-height: 50px;
@@ -88,13 +88,14 @@ hgroup h2{
 }
 
 
-#s1 article {
+/*#s1 article {*/
+article {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
 }
 
-article p {
+p {
     font-family: "HeiS ASC Simplified Chinese","HeiS ASC Simplified Chinese_n5","HeiT ASC Traditional Chinese","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #666;
     text-align: justify;
@@ -219,3 +220,60 @@ align-content: center;
     column-rule: 1px solid lightgrey; /* or do column-rule config in one lign*/
 }
 
+/*=== SECTION S3 ===*/
+
+
+#s3 video {
+    position: flex;
+    width: 100%;
+    max-height: 900px;
+    height: auto;
+}
+
+.aside {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+/*    width: 80%;*/
+}
+
+.aside p {
+/*    width: 90%;*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* === BUTTON ORDER NOW2 === */
+
+#s3 .wrapper2 {
+    margin-top: 30px; 
+    margin-bottom:  30px;
+    text-align: center;
+}
+#s3 .button2 {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;  
+}
+
+#s3 .button2 {
+    background-color: #fff;
+    color: black; 
+    border: 2px solid #f44336;
+align-content: center;
+    align-items: center;
+}
+
+#s3 .button2:hover {
+    background-color: #f44336;
+    color: white;
+}

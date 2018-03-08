@@ -54,16 +54,34 @@ html, body {height: 100%;}
 
 /*=== SECTION 1 ===*/
 #s1{
+/* no need in background image because video background was added*/
+/*
     background-image: url(../images/tesla/t-ms6.jpg);
     background-size: cover;
     background-position: center;
+*/
 
     width: 100%; /* set width of section to 100% of the screen */
     min-height: 100%; /* set minimum height of the section to 100% of the screen */
     height: auto; /*other: resize the height to auto*/
-    padding: 10px;
     display: flex;
+        padding: 10px;
+    z-index: 0;
     
+}
+
+/* === BACKGROUND VIDEO === */
+#s1 #tesla_vid {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1; /*move video on background*/
+	background: url(images/tesla_img.jpg) no-repeat; /*background image while video is downloading*/
+	background-size: cover;
 }
 
 #s1 hgroup {
@@ -160,6 +178,7 @@ html, body {height: 100%;}
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    
 }
 
 #s1 hgroup h3 span:after {
@@ -169,6 +188,7 @@ html, body {height: 100%;}
     top: 0;
     right: -20px;
     transition: 0.5s;
+    color: red;
 }
 
 #s1 hgroup h3:hover span {
