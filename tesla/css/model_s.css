@@ -23,6 +23,7 @@ body {background: #fff;}
     position: fixed; /*make navigation positon fixed on top of the screen*/
     text-transform:uppercase; /*uppercase letters*/
     font-weight: bold; /*make text bold in navigation*/
+    z-index: 99; /* show menu over all other objects*/
 
 }
 
@@ -309,8 +310,8 @@ footer #n2 {
 
 
 /* === MOBILE ===*/
-h2 {font-size: 20px;}
-h3 {font-size: 15px;}
+h2 {font-size: 25px;}
+h3 {font-size: 20px;}
 #s2 .dual_motor {
     margin-left: auto;
     margin-right: auto;

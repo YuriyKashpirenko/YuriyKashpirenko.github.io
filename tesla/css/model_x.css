@@ -20,6 +20,7 @@ html, body {height: 100%;}
     position: fixed; /*make navigation positon fixed on top of the screen*/
     text-transform:uppercase; /*uppercase letters*/
     font-weight: bold; /*make text bold in navigation*/
+    z-index: 99; /* show menu over all other objects*/
 
 }
 
@@ -106,6 +107,7 @@ h2{
 #s2 {
 	display: flex;
 	flex-flow: row wrap;
+/*    flex-shrink: 1;*/
 	/*font-weight: bold;*/
 	text-align: center;
     background: #f2f2f2;
@@ -121,25 +123,43 @@ h2{
 
 }
 
+/*=== VIDEO ===*/
 .main video {
     width: 100%;
     max-height: 900px;
     height: auto;
 }
 
+/*=== TEXT ON TOP OF VIDEO ===*/
+/*
 .b-center {
     position: absolute;
     bottom: 8px;
     left: 50%;
+    right: 50%;
     color: #fff;    
 }
+*/
 
+#s2 article h3{
+    margin-top: 20px;
+}
+
+.aside1 {
+    margin: auto;
+    align-items: center;
+}
+.aside1 p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
 
 /* === BUTTON ORDER NOW2 === */
 
 #s2 .wrapper2 {
     margin-top: 30px; 
-    margin-bottom:  30px;
+    margin-bottom:  20px;
     text-align: center;
 }
 #s2 .button2 {
@@ -170,36 +190,202 @@ h2{
     color: white;
 }
 
+/*=== SECTION S3 ===*/
+#s3 {
+	display: flex;
+	flex-flow: row wrap;
+    flex-shrink: 1;
+	/*font-weight: bold;*/
+	text-align: center;
+    background: #f2f2f2;
+}
+
+#s3 article {
+    margin: auto;
+    align-items: center;
+}
+
+/*
+#s3 article h2 {
+    margin-top: 30px;
+}
+*/
+
+#s3 p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+#s3 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*=== SECTION S4 ===*/
+
+/*=== BACKGROUND IMAGE ===*/
+#s4 {
+    background: url(../images/t_mx/m_x/m_x2.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 60%;
+    height: auto;
+/*    align-items: center;*/
+/*    vertical-align: middle;*/
+    
+}
+
+#s4 article p {
+    padding: 10px;
+}
+
+/*=== SECTION S5 ===*/
+#s5 article {
+    margin: auto;
+    align-items: center;
+}
+
+#s5 h2{
+    text-align: center;
+}
+
+#s5 p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+
+
+/*=== FOOTER ===*/
+footer {
+    margin: 40px;
+}
+
+footer #n2 {
+/*    display: flex;*/
+    flex-flow: row wrap;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #666;
+/*    margin-bottom: 10px;*/
+}
+
+
+#n2 a:link{
+    color: #666;
+    text-decoration: none;
+    flex-grow:1;
+}
+
+#n2 a:visited{
+    color:#fff;
+}
+
+#n2 a:hover{
+    color: grey;
+}
+
+#n2 a:active{
+    color: #fff;
+}
+
 
 
 /* === MOBILE ===*/
-.aside1 {
-    background: green;
-    padding: 20px;
-    flex: 1 100%;
+@media all and (max-width: 599px){
+    .f_cap {
+        display: none;
+    }
+
+    h2 {font-size: 25px;}
+    h3 {font-size: 20px;}
+
+    .aside1 {
+        background: lightblue;
+    /*    padding-top: 20px;*/
+    /*    padding: 20px;*/
+        flex: 1 100%;
+    }
+
+    .main {
+        background: lightblue;
+    /*    padding-bottom: 20px;*/
+        flex: 1 100%;
+    }
+
+    /*=== hide text ===*/
+    .f_wings {visibility: hidden;}
+
 }
 
-
-footer {
-    background-color: grey;
-}
 
 /* === TABLET ===*/
-@media all and (min-width: 600px){
+@media all and (min-width: 600px) and (max-width: 799px){
     .aside {
         flex: 1 auto;
-        background: red;
+        background: lightgreen;
     }
+    
+    h2 {font-size: 30px;}
+    h3 {font-size: 20px;}
+    
+    /*=== hide text ===*/
+    .f_wings {visibility: hidden;}
+    
+
+    
 }
 
 /*=== DESKTOP ===*/
 @media all and (min-width:800px){
-    .main {flex: 2 0px;
+/*    .main {flex:2 80%;*/
+    .main {flex:1 50%;
+/*flex-shrink: 1;*/
         background: #f2f2f2;}
 /*    .aside1 {order:-1;}*/
     .main {order:1;}
     .aside1 {order:2;}
     .aside1 {background: #f2f2f2;}
+    .aside {
+/*        flex: 1 40%;*/
+        flex: 1 40%;
+    }
 /*    footer{order:3;}*/
+    .aside2 {order:2;}
+    .aside2 {background: #f2f2f2;}
+
+/*=== SECTION S4 CLASS FALCON FINGS ===*/
+    .f_wings {
+    width: 40%;
+    height: auto;
+    padding: 10px;
+/*        margin-top: 6%;*/
+    text-align: justify;
+    position: absolute;
+    right: 20px;
+/*    top: 50%;*/
+
+/* I was trying to align text vertically in the middle of section s4 */
+/*
+    align-items: center;
+    vertical-align: middle;
+*/
+
+    }
+
+/*=== hide text ===*/
+    .b_text {
+        display: none;
+    }
+    
 
 }

@@ -23,6 +23,7 @@ html, body {height: 100%;}
     position: fixed; /*make navigation positon fixed on top of the screen*/
     text-transform:uppercase; /*uppercase letters*/
     font-weight: bold; /*make text bold in navigation*/
+    z-index: 99; /* show menu over all other objects*/
 
 }
 
@@ -54,18 +55,11 @@ html, body {height: 100%;}
 
 /*=== SECTION 1 ===*/
 #s1{
-/* no need in background image because video background was added*/
-/*
-    background-image: url(../images/tesla/t-ms6.jpg);
-    background-size: cover;
-    background-position: center;
-*/
-
     width: 100%; /* set width of section to 100% of the screen */
     min-height: 100%; /* set minimum height of the section to 100% of the screen */
     height: auto; /*other: resize the height to auto*/
     display: flex;
-        padding: 10px;
+    padding: 10px;
     z-index: 0;
     
 }
@@ -122,8 +116,6 @@ html, body {height: 100%;}
 }
 
 #s1 .flex .b1 {
-
-/*    position: relative;*/
     background-color:rgba(192,192,192,0.3);
     color: #fff;
     font-family: Gotham Medium,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Robato;
@@ -132,10 +124,6 @@ html, body {height: 100%;}
     width: 200px;
     margin: 5px;
     text-transform: uppercase;
-    
-/*    transition: border .3s;*/
-/*    border: 0;*/
-
     
 }
 
@@ -168,8 +156,7 @@ html, body {height: 100%;}
     transition: all 0.5s; /* add transition */
     cursor: pointer;
     margin: 5px;
-
-/*    margin: auto;*/    
+    
 }
 
 /* === ANIMATION  === */
@@ -202,7 +189,6 @@ html, body {height: 100%;}
 
 
 #s1 #n2 {
-/*    display: flex;*/
     flex-flow: row wrap;
     position:fixed;
     bottom: 0;
@@ -215,10 +201,6 @@ html, body {height: 100%;}
 
 #n2 a:link{
     color:#fff;
-/*
-    font-family: Gotham Book,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Roboto;
-    text-align: center;  align text in the middle  
-*/
     text-decoration: none;
     flex-grow:1;
 }
@@ -235,84 +217,9 @@ html, body {height: 100%;}
     color: #fff;
 }
 
-
-/*=== SECTION 2 ===*/
-#s2 {
-	display: flex;
-	flex-flow: row wrap;
-	/*font-weight: bold;*/
-	text-align: center;
-}
-
-.main {
-    background: #fff;
-    text-align: left;
-    padding: 20px;
-    flex: 1 100%;/*1 is flex grow and 100% is flex basis */
-	/* 1 value is flex grow; 2 value is for shrink; 3 value is flex basis*/
-}
-
-/* === MOBILE ===*/
-.aside1 {
-    background: green;
-    padding: 20px;
-    flex: 1 100%;
-}
-
-.aside2 {
-    background: red;
-    padding: 20px;
-    flex: 1 100%;
-}
-
+/*=== FOOTER ===*/
 footer {
-    background-color: grey;
+    text-align: center;
+    margin-bottom: 20px;
 }
-
-/* === TABLET ===*/
-@media all and (min-width: 600px){
-    .aside {flex: 1 auto;}
-    #s1 hgroup h2 {font-size: 52px;}
-    #s1 hgroup h3 {font-size: 22px;}
-    
-/*    #s1 hgroup */
-}
-
-/*=== DESKTOP ===*/
-@media all and (min-width:800px){
-    .main {flex: 5 0px;
-        background: #fff;}
-    .aside1 {order:1;}
-    .main {order:2;}
-    .aside2 {order:3;}
-    footer{order:4;}
-    #s2 hgroup h2 {font-size: 10vmax;}
-    #s2 hgroup h3 {font-size: 32px;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
