@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset = "UTF-8"> 
+<title>form example</title>
+<link rel="stylesheet" type="text/css" href="css/form_tesla.css">
+</head>
+<body>
+	 <!-- The overlay -->
+<nav id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--&times; - an X to close the menu -->
+
+  <!-- Overlay content -->
+	<div id="overlay-content">
+	       <form action = "MAILTO:kashpirenko@gmail.com" method = "post" enctype = "text/plain">
+
+			<label for = "fname">First Name</label>
+			<input type = "text" name = "firstname" id = "fname" placeholder = "Name" required>
+
+			<label for = "lname">Last Name</label>
+			<input type = "text" name = "lname" id = "lastname" placeholder = "Last Name" required>
+
+			<label for = "mail">Email</label>
+			<input type = "email" name = "mail" id = "email" placeholder = "example@email.com" required>
+
+			<label for = "tarea">Comments</label>
+			<textarea id = "textarea" placeholder = "Text"></textarea>
+
+			<input type = "submit" value = "Send">
+			<input type = "reset" value = "Reset">
+		</form>
+
+	</div>
+
+</nav>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<!--<span id = "trigger" onclick="openNav()">☰ MENU</span> -->
+
+<button id = "trigger" class="b1" value = "button" onclick="openNav()">order yours</button>
+
+
+
+
+
+<!-- the very last thing you add on this page s the javascript in a script tag -->
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</body>
+</html>	
+

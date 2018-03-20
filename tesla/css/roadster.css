@@ -138,26 +138,6 @@ align-content: center;
     color: white;
 }
 
-/* === LINK SHEDULE A TEST DRIVE === */
-#s1 #link {
-    font-family: "HeiS ASC Simplified Chinese","HeiS ASC Simplified Chinese_n5","HeiT ASC Traditional Chinese","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-#s1 #link:link{
-    text-decoration: none;
-}
-
-#s1 #link:visited{
-    color: red;
-}
-
-#s1 #link:hover{
-    color: red;
-}
 
 /* === ANIMATION  (LINK SHEDULE A TEST DRIV) === */
 #s1 #link h4 span {

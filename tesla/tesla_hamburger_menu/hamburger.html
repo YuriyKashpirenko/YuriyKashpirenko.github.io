@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>hamburger menu example</title>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+</head>
+<body>
+	 <!-- The overlay -->
+<nav id="HambNav" class="overlay2">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--&times; - an X to close the menu -->
+
+  <!-- Overlay content -->
+  <div class="overlay-content-menu">
+        <a href="index.html">Tesla</a>
+        <a href="model_s.html">Model S</a>
+        <a href="model_x.html">Model X</a>
+        <a href="roadster.html">Roadster</a> 
+  </div>
+
+</nav>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span id = "trigger2" onclick="openNav()">☰ MENU</span> 
+
+
+
+
+
+
+<!-- the very last thing you add on this page s the javascript in a script tag -->
+<script>
+function openNav() {
+    document.getElementById("HambNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("HambNav").style.width = "0%";
+}
+</script>
+
+
+</body>
+</html>

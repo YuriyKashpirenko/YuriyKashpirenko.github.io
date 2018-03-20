@@ -56,7 +56,7 @@ html, body {height: 100%;}
 /*=== SECTION 1 ===*/
 #s1{
     width: 100%; /* set width of section to 100% of the screen */
-    min-height: 100%; /* set minimum height of the section to 100% of the screen */
+    min-height:100%;  /* set minimum height of the section to 100% (recomended) of the screen */
     height: auto; /*other: resize the height to auto*/
     display: flex;
     padding: 10px;
@@ -119,16 +119,23 @@ html, body {height: 100%;}
     background-color:rgba(192,192,192,0.3);
     color: #fff;
     font-family: Gotham Medium,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Robato;
-    font-weight: bold; /*or normal*/
+    font-weight: bold;/*or normal*/
     padding: 10px 20px;
     width: 200px;
     margin: 5px;
     text-transform: uppercase;
+    transition-duration: 0.5s;
+    cursor: pointer;
     
 }
 
+#s1 .flex .b1 {
+    background-color: rgba(192,192,192,0.7); /*button background color transparent 0.3*/
+    border: 2px solid rgba(192,192,192,0.0); /*border color: transperent*/
+}
+
 #s1 .flex .b1:hover {
-    border: 2px solid #fff;
+    border: 2px solid red;
 }
 
 /*=== NEWSLETTER LINK ===*/
@@ -217,9 +224,286 @@ html, body {height: 100%;}
     color: #fff;
 }
 
+/*=======================================*/
+/*=============== FORMS =================*/
+/*=======================================*/
+
+#overlay-content {
+	width: 60%;
+	background: #eee;
+	padding: 20px;
+	margin: 100px auto;
+	border-radius: 10px;
+}
+
+
+/*=== TEXT ===*/
+input[type=text], input[type=email] {
+	width: 60%;
+	padding: 12px 0px 4px;
+	margin: 6px 0 20px;
+	display: block;
+	border: none;
+	border-bottom: 1px dotted #000;
+	/*border-radius: 4px;*/
+	font-size: 22px;
+	font-family: Georgia, "Times new Roman", Times, Serif;
+	color: #000;
+	background: #eee;
+	transition: all .3s;
+
+}
+
+
+input[type=text]:focus, input[type=email]:focus {
+	width: 100%;
+	background: #eee;
+	color: #f00;
+	outline: none;
+	border-bottom: 1px dotted #f00;
+
+}
+
+
+/*=== BUTTONS ===*/
+input[type=submit], input[type=reset] {
+
+	display: inline-block;
+	width: 20%;
+	background-color: red;
+	color: white;
+	padding: 14px 20px;
+	margin: 14px 10px 14px 0;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 22px;
+	font-family: Georgia, "Times new Roman", Times, Serif;
+	transition: all .3s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #333;
+}
+
+
+/*=== COMMENT ===*/
+textarea {
+	display: block;
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	margin: 6px 0 20px;
+	border-radius: 4px;
+	border: none;
+	border-bottom: 1px dotted #000;
+	background-color: #fff;
+	font-size: 22px;
+	resize: none;
+	color: #333;
+	transition: .3s;
+}
+
+
+textarea:hover {
+	background: #333;
+	color: #fff;
+	outline: none;
+	border-bottom:  1px dotted #f00;
+}
+
+
+/*=== LABEL ===*/
+label {
+	font-family: verdana, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+/*----------------------------------------------------*/
+
+#trigger {}
+
+.b1 {
+    background-color:rgba(192,192,192,0.3);
+    color: #fff;
+    font-family: Gotham Medium,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Robato;
+    font-weight: bold;/*or normal*/
+    padding: 10px 20px;
+    width: 200px;
+    margin: 5px;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.b1 {
+    background-color: rgba(192,192,192,0.3); /*button background color transparent 0.3*/
+    border: 2px solid rgba(192,192,192,0.0); /*border color: transperent*/
+}
+.b1:hover {
+    border: 2px solid red;
+}
+
+
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+} 
+
+/*=======================================*/
+/*=============== FORMS END =============*/
+/*=======================================*/
+
+
 /*=== FOOTER ===*/
 footer {
     text-align: center;
     margin-bottom: 20px;
 }
+
+
+/* ===================== MOBILE AND TABLET ===============================*/
+@media all and (max-width: 899px){
+    
+#n1 {visibility: hidden;} /*hide original navigation menu*/
+    
+/*=========== HAMBURGER MENU =============*/
+
+#trigger2 {
+	font-size: 20px;
+	cursor: pointer;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 9; /*put text on top of other elements*/
+	color: white; /*color menu*/
+	font-weight: bold;
+}
+
+
+ /* The Overlay (background) */
+.overlay2 {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content-menu {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay2 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay2 a:hover, .overlay2 a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay2 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay2 a {font-size: 20px}
+    .overlay2 .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+} 
+
+/*=========== END OF HAMBURGER MENU =========*/
+
+}
+
+
+/*=== DESCKTOP ===*/
+@media all and (min-width: 900px){
+    /* HIDE MOBILE NAVIGATION */
+    #HambNav {visibility: hidden;} 
+    #trigger2 {visibility: hidden;}
+}
+
+
 

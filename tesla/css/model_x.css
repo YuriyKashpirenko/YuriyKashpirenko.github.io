@@ -59,9 +59,6 @@ html, body {height: 100%;}
     height: auto;
 }
 
-.img1 {
-/*    position: relative;*/
-}
 
 .f_cap {
     position: absolute;
@@ -107,8 +104,6 @@ h2{
 #s2 {
 	display: flex;
 	flex-flow: row wrap;
-/*    flex-shrink: 1;*/
-	/*font-weight: bold;*/
 	text-align: center;
     background: #f2f2f2;
 }
@@ -116,7 +111,6 @@ h2{
 .main {
     background: #fff;
     text-align: center;
-/*    padding: 20px;*/
     flex: 1 100%;/*1 is flex grow and 100% is flex basis */
 	/* 1 value is flex grow; 2 value is for shrink; 3 value is flex basis*/
     position: relative;
@@ -205,11 +199,6 @@ h2{
     align-items: center;
 }
 
-/*
-#s3 article h2 {
-    margin-top: 30px;
-}
-*/
 
 #s3 p{
     margin-left: auto;
@@ -330,6 +319,10 @@ footer #n2 {
 
 /* === TABLET ===*/
 @media all and (min-width: 600px) and (max-width: 799px){
+    .f_cap {
+        display: none;
+    }
+    
     .aside {
         flex: 1 auto;
         background: lightgreen;
