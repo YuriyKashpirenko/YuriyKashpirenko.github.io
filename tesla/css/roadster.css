@@ -370,7 +370,7 @@ footer #n2 {
 }
 
 #n2 a:visited{
-    color:#fff;
+    color:grey;
 }
 
 #n2 a:hover{
@@ -378,15 +378,17 @@ footer #n2 {
 }
 
 #n2 a:active{
-    color: #fff;
+    color: grey;
 }
 
 
 
 /* === MOBILE ===*/
-h2 {font-size: 25px;}
-h3 {font-size: 20px;}
-#s2 .dual_motor {
+@media all and (max-width: 599px){
+    h2 {font-size: 25px;}
+    h3 {font-size: 20px;}
+    .specs {font-size: 12px;} /*change size of letters*/
+    #s2 .dual_motor {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -394,6 +396,7 @@ h3 {font-size: 20px;}
     column-count: 0;
     column-gap: 0;
     column-rule: 0; 
+    }
 }
 
 

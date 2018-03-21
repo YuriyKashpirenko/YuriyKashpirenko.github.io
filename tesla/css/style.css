@@ -61,6 +61,7 @@ html, body {height: 100%;}
     display: flex;
     padding: 10px;
     z-index: 0;
+  
     
 }
 
@@ -152,9 +153,11 @@ html, body {height: 100%;}
 }
 
 /*=== HGROUP ===*/
+hgroup {}
+
 #s1 hgroup h3 {
     color: #fff;
-    font-family: Gotham Book,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Roboto, Roboto Condensed';
+    font-family: "Gotham Book","M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Roboto, Roboto Condensed;
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -395,7 +398,9 @@ label {
     font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, 
+so they don't overlap */
+
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
@@ -414,13 +419,15 @@ label {
 footer {
     text-align: center;
     margin-bottom: 20px;
+    /*fix footer on the bottom*/
+    position:fixed; 
 }
 
 
 /* ===================== MOBILE AND TABLET ===============================*/
 @media all and (max-width: 899px){
     
-#n1 {visibility: hidden;} /*hide original navigation menu*/
+#n1 {display: none;} /*hide original navigation menu*/
     
 /*=========== HAMBURGER MENU =============*/
 
@@ -501,8 +508,8 @@ footer {
 /*=== DESCKTOP ===*/
 @media all and (min-width: 900px){
     /* HIDE MOBILE NAVIGATION */
-    #HambNav {visibility: hidden;} 
-    #trigger2 {visibility: hidden;}
+    #HambNav {display: none;} 
+    #trigger2 {display: none;}
 }
 
 

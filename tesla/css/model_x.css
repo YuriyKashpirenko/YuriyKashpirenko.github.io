@@ -276,7 +276,7 @@ footer #n2 {
 }
 
 #n2 a:visited{
-    color:#fff;
+    color:grey;
 }
 
 #n2 a:hover{
@@ -284,7 +284,7 @@ footer #n2 {
 }
 
 #n2 a:active{
-    color: #fff;
+    color: grey;
 }
 
 
@@ -333,26 +333,19 @@ footer #n2 {
     
     /*=== hide text ===*/
     .f_wings {visibility: hidden;}
-    
 
-    
 }
 
 /*=== DESKTOP ===*/
 @media all and (min-width:800px){
-/*    .main {flex:2 80%;*/
-    .main {flex:1 50%;
-/*flex-shrink: 1;*/
-        background: #f2f2f2;}
-/*    .aside1 {order:-1;}*/
+    .main {
+        flex:1 50%;
+        background: #f2f2f2;
+    }
     .main {order:1;}
     .aside1 {order:2;}
     .aside1 {background: #f2f2f2;}
-    .aside {
-/*        flex: 1 40%;*/
-        flex: 1 40%;
-    }
-/*    footer{order:3;}*/
+    .aside {flex: 1 50%;}
     .aside2 {order:2;}
     .aside2 {background: #f2f2f2;}
 
@@ -361,24 +354,14 @@ footer #n2 {
     width: 40%;
     height: auto;
     padding: 10px;
-/*        margin-top: 6%;*/
     text-align: justify;
     position: absolute;
     right: 20px;
-/*    top: 50%;*/
-
-/* I was trying to align text vertically in the middle of section s4 */
-/*
-    align-items: center;
-    vertical-align: middle;
-*/
-
     }
 
 /*=== hide text ===*/
     .b_text {
         display: none;
     }
-    
 
 }

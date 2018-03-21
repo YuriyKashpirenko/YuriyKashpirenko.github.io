@@ -207,21 +207,6 @@ h2 {
     height: auto;
 }
 
-#s2 .dual_motor {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-/*=== MULTI-COLUMN LAYOUT ===*/
-    column-count: 3;
-    column-gap: 40px;
-/*
-    column-rule-style: solid;
-    column-rule-width: 1px;
-    column-rule-color: lightblue;
-*/
-    column-rule: 1px solid lightgrey; /* or do column-rule config in one lign*/
-}
-
 
 /*=== SECTION S3 ===*/
 #s3 {
@@ -271,19 +256,15 @@ h2 {
     bottom: 0px;
 }
 
-
 /*=== FOOTER ===*/
-footer {
-    margin: 40px;
-}
-
-footer #n2 {
+footer #n2{
     flex-flow: row wrap;
     position:static;
     bottom: 0;
     width: 100%;
     text-align: center;
     color: #666;
+    margin: 40px;
 }
 
 
@@ -294,7 +275,7 @@ footer #n2 {
 }
 
 #n2 a:visited{
-    color:#fff;
+    color: grey;
 }
 
 #n2 a:hover{
@@ -302,29 +283,30 @@ footer #n2 {
 }
 
 #n2 a:active{
-    color: #fff;
+    color: grey;
 }
-
 
 
 /* === MOBILE ===*/
-h2 {font-size: 25px;}
-h3 {font-size: 20px;}
-#s2 .dual_motor {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-/*=== MULTI-COLUMN LAYOUT ===*/
-    column-count: 0;
-    column-gap: 0;
-    column-rule: 0; 
+@media all and (min-width: 0px) and (max-width: 599px){
+    h2 {font-size: 25px;}
+    h3 {font-size: 20px;}
+    #s2 .dual_motor {}
+
 }
 
-
 /* === TABLET ===*/
-@media all and (min-width: 600px){
+@media all and (min-width: 600px) and (max-width: 899px){
     h2 {font-size: 30px;}
     h3 {font-size: 20px;}
+    #s2 .dual_motor {}
+
+}
+
+/*=== DESCKTOP ===*/
+@media all and (min-width: 900px){
+    h2 {font-size: 40px;}
+    h3 {font-size: 30px;}
     #s2 .dual_motor {
     margin-left: auto;
     margin-right: auto;
@@ -332,14 +314,13 @@ h3 {font-size: 20px;}
 /*=== MULTI-COLUMN LAYOUT ===*/
     column-count: 3;
     column-gap: 40px;
+/*
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
+*/
     column-rule: 1px solid lightgrey; /* or do column-rule config in one lign*/
     }
-}
-
-/*=== DESCKTOP ===*/
-@media all and (min-width: 900px){
-    h2 {font-size: 40px;}
-    h3 {font-size: 30px;}
 
 }
 

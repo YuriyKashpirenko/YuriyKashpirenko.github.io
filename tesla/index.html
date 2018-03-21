@@ -20,30 +20,8 @@
        </nav>
        
        
-<!-------------- MOBILE AND TABLEN (HAMBURGER) NAVIGATION ---------------->
-    <!-- The overlay -->
-<nav id="HambNav" class="overlay2">
-
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeHambNav()">&times;</a> <!--&times; - an X to close the menu -->
-
-  <!-- Overlay content -->
-  <div class="overlay-content-menu">
-        <a href="index.html">Tesla</a>
-        <a href="model_s.html">Model S</a>
-        <a href="model_x.html">Model X</a>
-        <a href="roadster.html">Roadster</a> 
-  </div>
-
-</nav>
-
-<!-- Use any element to open/show the overlay navigation menu -->
-<span id = "trigger2" onclick="openHambNav()">☰ MENU</span> 
-<!---------- END OF MOBILE AND TABLEN (HAMBURGER) NAVIGATION -------------->
-       
-       
 <!-- SECTION 1-->
-        <section id="s1">
+<section id="s1">
            
 <!-- BACKGROUND VIDEO -->
             <video autoplay loop muted poster="images/tesla_img.jpg" id = "tesla_vid">
@@ -52,102 +30,125 @@
             </video>
            
             <hgroup>
-            <h2>quick acceleration. longest range. the safest cars ever.
-            </h2>
-            <br>
-<!-- NAVIGATION 2-->
-            <div class = "flex">
-<!-- Use any element to open/show the overlay navigation menu -->
-                <button id = "trigger" class="b1" value = "button" onclick="openNav()">order yours</button>
+                <h2>quick acceleration. longest range. the safest cars ever.
+                </h2>
+                <br>
+    <!-- NAVIGATION 2-->
+                <div class = "flex">
+    <!-- Use any element to open/show the overlay navigation menu -->
+                    <button id = "trigger" class="b1" value = "button" onclick="openNav()">order yours</button>
+                    
+                    <button class="b1" value = "button" onclick="window.location.href='https://www.tesla.com/en_CA/new'">new inventor</button>
+                    <button class="b1" value = "button" onclick="window.location.href='https://www.tesla.com/en_CA/used'">used inventor</button>
+                    <button class="b1" value = "button" onclick="window.location.href='https://www.tesla.com/en_CA/drive?model=mx'">test drive</button>
+                </div>
                 
-                <button class="b1" value = "button" onclick="window.location.href='https://www.tesla.com/en_CA/new'">new inventor</button>
-                <button class="b1" value = "button" onclick="window.location.href='https://www.tesla.com/en_CA/used'">used inventor</button>
-                <button class="b1" value = "button" onclick="window.location.href='https://www.tesla.com/en_CA/drive?model=mx'">test drive</button>
-            </div>
-            
-            <br>
-            <a href="https://www.tesla.com/en_CA/updates">
-<!-- ADD ANIMATION ON H3 TEXT -->
-                <h3>
-                <span>get the newsletter</span> <!-- add span -->
-                </h3>
-            </a>
+                <br>
+                <a href="https://www.tesla.com/en_CA/updates">
+           <!-- ADD ANIMATION ON H3 TEXT -->
+                    <h3>
+                    <span>get the newsletter</span> <!-- add span -->
+                    </h3>
+                </a>
             </hgroup>
-            
-            
-<!------------------------------ The overlay ------------------------------>
-<nav id="myNav" class="overlay">
 
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--&times; - an X to close the menu -->
 
-  <!-- Overlay content -->
-	<div id="overlay-content">
-	       <form action = "MAILTO:kashpirenko@gmail.com" method = "post" enctype = "text/plain">
+            <!-- FOOTER -->
+            <footer>
+              <nav id = "n2">
+                <a href="https://www.tesla.com/en_CA/about">Tesla  &copy;  2018</a> | 
+                <a href="https://www.tesla.com/en_CA/about/legal">Privacy and Legal</a> | 
+                <a href="https://www.tesla.com/en_CA/contact">Contact</a> | 
+                <a href="https://www.tesla.com/en_CA/careers">Careers</a> | 
+                <a href="https://www.tesla.com/en_CA/findus/list">Locations</a> 
+              </nav>
+            </footer>  
+</section>
 
-			<label for = "fname">First Name</label>
-			<input type = "text" name = "firstname" id = "fname" placeholder = "Name" required>
 
-			<label for = "lname">Last Name</label>
-			<input type = "text" name = "lname" id = "lastname" placeholder = "Last Name" required>
+    <!-- MOBILE AND TABLEN (HAMBURGER) NAVIGATION -->
+        <!-- THE OVERLAY -->
+    <nav id="HambNav" class="overlay2">
 
-			<label for = "mail">Email</label>
-			<input type = "email" name = "mail" id = "email" placeholder = "example@email.com" required>
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeHambNav()">&times;</a> <!--&times; - an X to close the menu -->
 
-			<label for = "tarea">Comments</label>
-			<textarea id = "textarea" placeholder = "Text"></textarea>
+      <!-- Overlay content -->
+      <div class="overlay-content-menu">
+            <a href="index.html">Tesla</a>
+            <a href="model_s.html">Model S</a>
+            <a href="model_x.html">Model X</a>
+            <a href="roadster.html">Roadster</a> 
+      </div>
 
-			<input type = "submit" value = "Send">
-			<input type = "reset" value = "Reset">
-		</form>
+    </nav>
 
-	</div>
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span id = "trigger2" onclick="openHambNav()">☰ MENU</span> 
+    <!-- END OF MOBILE AND TABLEN (HAMBURGER) NAVIGATION -->
 
-</nav>
- 
-        </section>
-        
-<!--------------- FOOTER  ----------------->
-    <footer>
-        <nav id = "n2">
-            <a href="https://www.tesla.com/en_CA/about">Tesla  &copy;  2018</a> | 
-            <a href="https://www.tesla.com/en_CA/about/legal">Privacy and Legal</a> | 
-            <a href="https://www.tesla.com/en_CA/contact">Contact</a> | 
-            <a href="https://www.tesla.com/en_CA/careers">Careers</a> | 
-            <a href="https://www.tesla.com/en_CA/findus/list">Locations</a> 
-           </nav>
-    </footer>
+
+
+
+    <!-- BUTTON ORDER YOURS -->
+        <!-- THE OVERLAY -->
+    <nav id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--&times; - an X to close the menu -->
+
+        <!-- Overlay content -->
+        <div id="overlay-content">
+          <form action = "MAILTO:kashpirenko@gmail.com" method = "post" enctype = "text/plain">
+
+            <label for = "fname">First Name</label>
+            <input type = "text" name = "firstname" id = "fname" placeholder = "Name" required>
+
+            <label for = "lname">Last Name</label>
+            <input type = "text" name = "lname" id = "lastname" placeholder = "Last Name" required>
+
+            <label for = "mail">Email</label>
+            <input type = "email" name = "mail" id = "email" placeholder = "example@email.com" required>
+
+            <label for = "tarea">Comments</label>
+            <textarea id = "textarea" placeholder = "Text"></textarea>
+
+            <input type = "submit" value = "Send">
+            <input type = "reset" value = "Reset">
+            </form>
+
+        </div>
+
+      </nav>
+      <!-- END BUTTON ORDER YOURS -->
     
-<!------------------------------------------->
-<!--------------- JAVA SCRIPT --------------->
-<!------------------------------------------->
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-            
-        }
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
-   
-   
-<!-- JAVA SCRIPT FOR HAMBURGER NAVIGATION -->
+      <!-- JAVA SCRIPT -->
+      <script>
+          function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+              
+          }
 
-    <script>
-        function openHambNav() {
-            document.getElementById("HambNav").style.width = "100%";
-        }
+          function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+          }
+      </script>
+     
+     
+  <!-- JAVA SCRIPT FOR HAMBURGER NAVIGATION --> 
 
-        function closeHambNav() {
-            document.getElementById("HambNav").style.width = "0%";
-        }
-    </script>
-    
-<!------------------------------------------->
-<!-------------END OF JAVA SCRIPT ----------->
-<!------------------------------------------->
+      <script>
+          function openHambNav() {
+              document.getElementById("HambNav").style.width = "100%";
+          }
+
+          function closeHambNav() {
+              document.getElementById("HambNav").style.width = "0%";
+          }
+      </script>
+      
+      <!-- END OF JAVA SCRIPT -->
    
     </body>
 </html>
