@@ -849,7 +849,7 @@ footer{
         opacity: 0.75;
     }
  
-    /*--===//SECTION N1 NAVIGATION//===--*/    
+    /*--===//SECTION N1 NAVIGATION//===--*/
     /*update navigation font size*/
     #n1 a{font-size: 14px;}   
     
@@ -859,7 +859,7 @@ footer{
         pointer-events: none;
         text-decoration: none;
         color: white;
-    }    
+    }
 
     /*--===/SCROLL TO TOP/===--*/
     #myBtn {font-size: 13px;}
