@@ -851,7 +851,7 @@ footer{
  
     /*--===//SECTION N1 NAVIGATION//===--*/    
     /*update navigation font size*/
-    #n1 a{font-size: 13px;}   
+    #n1 a{font-size: 14px;}   
     
     /*set tel link as not active*/
     #n1 .tl{
@@ -862,7 +862,7 @@ footer{
     }    
 
     /*--===/SCROLL TO TOP/===--*/
-    #myBtn {font-size: 13px;}
+    #myBtn {font-size: 14px;}
     
     /*--===//GENERAL CONFIG//===--*/
     /*update header group size*/
@@ -875,7 +875,7 @@ footer{
     }
     
     /*update paragraph size*/
-    p{font-size: 13px;}    
+    p{font-size: 14px;}    
     
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
     /*flex box update margin for address*/
