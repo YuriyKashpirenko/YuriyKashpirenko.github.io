@@ -849,18 +849,18 @@ footer{
         opacity: 0.75;
     }
  
-    /*--===//SECTION N1 NAVIGATION//===--*/
+    /*--===//SECTION N1 NAVIGATION//===--*/    
+    /*update navigation font size*/
+    #n1 a{font-size: 13px;}   
+    
     /*set tel link as not active*/
     #n1 .tl{
         cursor: default;
         pointer-events: none;
         text-decoration: none;
         color: white;
-    }
-    
-    /*update navigation font size*/
-    #n1 a{font-size: 13px;}   
-   
+    }    
+
     /*--===/SCROLL TO TOP/===--*/
     #myBtn {font-size: 13px;}
     
