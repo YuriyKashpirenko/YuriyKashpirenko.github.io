@@ -40,6 +40,7 @@ body {background: white;}
     color: grey;
 }
 
+/*set work hours as not active*/
 #n1 .wh{
     cursor: default;
     pointer-events: none;
@@ -748,28 +749,28 @@ footer{
 
     /*--===//SECTION N1 NAVIGATION//===--*/
     /*update navigation font size*/
-    #n1 a{font-size: 11px;} 
+    #n1 a{font-size: 13px;} 
     
     #n1 .tl{font-size: 0;}
     #n1 .tl:after{
         content: '(514)634-3548';
-        font-size: 11px;
+        font-size: 13px;
     }
     
     #n1 .wh{font-size: 0;}
     #n1 .wh:after{
         content: 'MON-FR 8AM-5PM';
-        font-size: 11px;
+        font-size: 13px;
     }
     
     #n1 .fb{font-size: 0;}
     #n1 .fb:after{
         content: 'FB';
-        font-size: 11px;
+        font-size: 13px;
     }
     
     /*--===/SCROLL TO TOP/===--*/
-    #myBtn {font-size: 12px;}
+    #myBtn {font-size: 13px;}
     
     /*--===//GENERAL CONFIG//===--*/
     /*update header group size*/
@@ -782,7 +783,7 @@ footer{
     }
     
     /*update paragraph size*/
-    p {font-size: 12px;}
+    p {font-size: 13px;}
     
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
     /*flex box update margin for address*/
@@ -849,6 +850,14 @@ footer{
     }
  
     /*--===//SECTION N1 NAVIGATION//===--*/
+    /*set tel link as not active*/
+    #n1 .tl{
+        cursor: default;
+        pointer-events: none;
+        text-decoration: none;
+        color: white;
+    }
+    
     /*update navigation font size*/
     #n1 a{font-size: 13px;}   
    
@@ -933,6 +942,14 @@ footer{
         /*set max width*/
         max-width: 1200px; 
     }
+    
+    /*set tel link as not active*/
+    #n1 .tl{
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+    color: white;
+}
 
     /*=== ALERT MESSAGE ===*/
     #s0 #alertMessage{
