@@ -433,7 +433,7 @@ footer{
     }
 
     /* Buttons */
-    #s1 .email {
+    #s1 .phone {
       background-color: #4CAF50; /* Green */
       border: none;
       border-radius: 12px;    
@@ -448,18 +448,18 @@ footer{
       cursor: pointer;
     }
 
-    #s1 .email {
+    #s1 .phone {
       background-color: #4CAF50; 
       color: black; 
       border: 2px solid #4CAF50;
     }
 
-    #s1 .email:hover {
+    #s1 .phone:hover {
       background-color: white ;
       color: white;
     }
 
-    #s1 .phone {
+    #s1 .email {
       background-color: #f44336; /* Red */
       border: none;
       border-radius: 12px;    
@@ -474,13 +474,13 @@ footer{
       cursor: pointer;
     }
 
-    #s1 .phone {
+    #s1 .email {
       background-color: #f44336; 
       color: black; 
       border: 2px solid #f44336;
     }
 
-    #s1 .phone:hover {
+    #s1 .email:hover {
       background-color: white;
       color: white;
     }    
@@ -577,6 +577,8 @@ footer{
     
     /*update paragraph size*/
     p{font-size: 14px;}    
+    
+    
     
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
     /*flex box update margin for address*/
