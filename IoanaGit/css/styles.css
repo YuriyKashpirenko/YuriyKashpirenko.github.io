@@ -9,53 +9,6 @@ html, body {height: 100%;}
 body {background: white;}
 
 
-/*=== NAVIGATION ===*/
-#n1 {
-    background-color:rgba(0,0,0,0.75);
-    display: flex;
-    flex-flow: row wrap;
-    /*justify-content: center;*/
-    align-items: center; /* align text verticaly */
-    padding: 10px;
-    width: 100%;
-    position: fixed; /*make navigation positon fixed on top of the screen*/
-    text-transform:uppercase; /*uppercase letters*/
-    font-weight: bold; /*make text bold in navigation*/
-    z-index: 99; /* show menu over all other objects*/
-}
-
-#n1 a:link{
-    color:#fff;
-    font-family: Gotham Book,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif, Roboto;
-    text-align: center; /* align text in the middle  */
-    text-decoration: none;
-    flex-grow:1;
-}
-
-#n1 a:visited{
-    color:white;
-}
-
-#n1 a:hover{
-    color: grey;
-}
-
-/*set work hours as not active*/
-#n1 .wh{
-    cursor: default;
-    pointer-events: none;
-    text-decoration: none;
-    color: white;
-}
-
-#n1 a:active{
-    color: #fff;
-}
-
-#n1 a.current {
-    color: grey;
-}
-
 
 /*=== BODY ===*/
 
@@ -185,7 +138,7 @@ p {
   border: none;
   border-radius: 12px;    
   color: white;
-  padding: 10px 32px;
+  padding: 10px 38px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -203,7 +156,7 @@ p {
 
 #s1 .phone:hover {
   background-color: white ;
-  color: white;
+  color: black;
 }
 
 #s1 .email {
@@ -229,7 +182,7 @@ p {
 
 #s1 .email:hover {
   background-color: white;
-  color: white;
+  color: black;
 }
 
 
@@ -445,7 +398,7 @@ footer{
       border: none;
       border-radius: 12px;    
       color: white;
-      padding: 8px 32px;
+      padding: 8px 38px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
