@@ -85,15 +85,7 @@ p {
 
 
 
-/*--===//S1 FOOTER//===--*/
-/*
-#s1 figure img { footer image
-    width: 100%;   
-    height: auto;  
-    z-index: 0;
-}
-*/
-
+/*--===//S1 HEADER//===--*/
 /* Image */
 #s1 .container {
   position: relative;
@@ -184,24 +176,7 @@ p {
   background-color: white;
   color: black;
 }
-
-
-/*
-#s1 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#s1 .flex-container > div {
-
-  margin: 5px;
-      line-height: 75px;
-  font-size: 30px;
-}
-*/
-
-
-/*--===//END OF S1 FOOTER//===--*/
+/*--===//END OF S1 HEADER//===--*/
 
 
 /*--===//S2 SERVICES//===--*/
@@ -232,7 +207,7 @@ p {
 
 
 
-/*--===//SECTION S4 WARRANTY//===--*/
+/*--===//SECTION S4 RATES WARRANTY//===--*/
 #s4 {
     background-color: white; 
 }
@@ -275,7 +250,7 @@ p {
   background-color: darkgrey;
   color: white;
 }
-/*--===//END OF SECTION S4 WARRANTY//===--*/
+/*--===//END OF SECTION S4 RATES WARRANTY//===--*/
 
 
 /*--===//SECTION S5 ADDRESS AND MAP//===--*/
@@ -309,7 +284,6 @@ p {
 /*--===//END OF SECTION S5 ADDRESS AND MAP//===--*/
 
 
-
 /*--===//FOOTER //===--*/
 footer{
     text-align: center;
@@ -323,37 +297,6 @@ footer{
 /*=== MEDIA CONFIGURATIONS ===*/
 /*=== MOBILE ===*/
 @media all and (max-width: 599px){
-    
-    /*=== ALERT MESSAGE ===*/
-    #s0 #alertMessage {
-        margin-top: 33px;
-        width:100%;
-        position: fixed;
-        z-index: 99;
-        opacity: 0.75;
-    }
-
-    /*--===//SECTION N1 NAVIGATION//===--*/
-    /*update navigation font size*/
-    #n1 a{font-size: 13px;} 
-    
-    #n1 .tl{font-size: 0;}
-    #n1 .tl:after{
-        content: '(514)634-3548';
-        font-size: 13px;
-    }
-    
-    #n1 .wh{font-size: 0;}
-    #n1 .wh:after{
-        content: 'MON-FR 8AM-5PM';
-        font-size: 13px;
-    }
-    
-    #n1 .fb{font-size: 0;}
-    #n1 .fb:after{
-        content: 'FB';
-        font-size: 13px;
-    }
     
     /*--===/SCROLL TO TOP/===--*/
     #myBtn {font-size: 13px;}
@@ -416,7 +359,7 @@ footer{
 
     #s1 .phone:hover {
       background-color: white ;
-      color: white;
+      color: black;
     }
 
     #s1 .email {
@@ -442,7 +385,7 @@ footer{
 
     #s1 .email:hover {
       background-color: white;
-      color: white;
+      color: black;
     }    
     
     
@@ -460,67 +403,12 @@ footer{
         flex: 100%;
     }
 
-    /*--===//SECTION S6 CONTACT US//===--*/
-    /*resize input field size*/
-    #s6 .CF_FirstName input[type = text] {padding: 12px 20px;}
-    #s6 .CF_LastName input[type = text] {padding: 12px 20px;}
-    #s6 .CF_Email input[type = email] {padding: 12px 20px;}
-    #s6 .CF_Phone input[type = number] {padding: 12px 20px;}
-    #s6 .CF_Car input[type = text] {padding: 12px 20px;}
-    #s6 .CF_CarModel input[type = text] {padding: 12px 20px;}
-    #s6 .CF_ModelYear input[type = number] {padding: 12px 20px;}
-    #s6 .CF_Subject input[type = text] {padding: 12px 20px;}
-    #s6 .CF_Message textarea {
-        padding: 12px 20px;
-        font-size: inherit;
-    }
-
-    /*contact form update width*/
-    #s6 form {width: 80%;}
-    /*contact form set rows width*/
-    #s6 .CF_FirstName {flex: 100%;}
-    #s6 .CF_LastName {flex: 100%;} 
-    #s6 .CF_Email {flex: 100%;} 
-    #s6 .CF_Phone {flex: 100%;}, 
-    #s6 .CF_CarModel {flex: 100%;} 
-    #s6 .CF_ModelYear {flex: 100%;}
-    
-    /*--===//SECTION S7 PARTNERS AND CLIENTS//===--*/
-    /*partners and clients set img width*/
-    #s7 img {width: 50%;}
-    /*partners and clients set rows width*/
-    #s7 .abrisocorp{flex: 50%;}
-    #s7 .smart_start_ca{flex: 50%;}
-    #s7 .globe{flex: 50%;}
-    #s7 .mko{flex: 50%;}
-
 }
 /*=== END OF MOBILE SECTION ===*/
 
 
 /* === TABLET ===*/
 @media all and (min-width: 600px) and (max-width: 799px){
-    
-    /*=== ALERT MESSAGE ===*/
-    #s0 #alertMessage {
-        margin-top: 35px;
-        width:100%;
-        position: fixed;
-        z-index: 99;
-        opacity: 0.75;
-    }
- 
-    /*--===//SECTION N1 NAVIGATION//===--*/
-    /*update navigation font size*/
-    #n1 a{font-size: 14px;}   
-    
-    /*set tel link as not active*/
-    #n1 .tl{
-        cursor: default;
-        pointer-events: none;
-        text-decoration: none;
-        color: white;
-    }
 
     /*--===/SCROLL TO TOP/===--*/
     #myBtn {font-size: 13px;}
@@ -538,8 +426,6 @@ footer{
     /*update paragraph size*/
     p{font-size: 14px;}    
     
-    
-    
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
     /*flex box update margin for address*/
     #s5 .flex-item-left-address{
@@ -549,40 +435,6 @@ footer{
     /*flex box update map height size*/
     #s5 .flex-item-right-map{
         height: auto;
-    }
-    
-    /*--===//SECTION S6 CONTACT US//===--*/
-    /*contact form update width*/
-    #s6 form {width: 80%;}    
-    
-    #s6 .CF_Email input[type = email];
-    #s6 .CF_Phone input[type = number];
-    #s6 .CF_ModelYear input[type = number];
-
-    /*--===//SECTION S7 PARTNERS AND CLIENTS//===--*/
-    /*partners and clients set img width*/
-    #s7 img {width: 40%;}
-    /*partners and clients set rows width*/
-    #s7 .globe{
-        flex: 25%; 
-        padding: 0px; 
-        order: 1;
-    }    
-    
-    #s7 .abrisocorp{
-        flex: 25%; /*flex item*/
-        padding: 0px; /*change distance between items*/ 
-        order: 2; /*set flex item order*/
-    }
-    #s7 .smart_start_ca{
-        flex: 25%; 
-        padding: 0px; 
-        order: 3;
-    }
-
-    #s7 .mko{flex: 25%; 
-        padding: 0px; 
-        order: 4;
     }
 
 }
@@ -600,80 +452,9 @@ footer{
         margin: 0 auto;
     }
     
-    /*=== NAVIGATION ===*/
-    #n1{
-        /*set max width*/
-        max-width: 1200px; 
-    }
-    
-    /*set tel link as not active*/
-    #n1 .tl{
-    cursor: default;
-    pointer-events: none;
-    text-decoration: none;
-    color: white;
-}
-    
-    /*update paragraph size*/
-    p{font-size: 18px;} 
-
-    /*=== ALERT MESSAGE ===*/
-    #s0 #alertMessage{
-        max-width: 1200px;
-        margin-top: 37px;
-        width:100%;
-        position: fixed;
-        z-index: 99;
-        opacity: 0.75;
-    }    
-    
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
     /*resize two flex boxes 50 by 50 percent*/
     #s5 .flex-item-left-address, .flex-item-right-map {flex:50%;}
-
-    /*--===//SECTION S6 CONTACT US//===--*/
-    /*resize 3 flex boxes*/
-    #s6 .CF_Car{
-        padding: 0px;
-        flex: 40%;
-    }
-
-    #s6 .CF_CarModel{
-        padding: 0px;
-        flex: 40%;
-    }
-
-    #s6 .CF_ModelYear{
-        padding: 0px;
-        flex: 20%;
-    }
-    
-    /*--===//SECTION S7 PARTNERS AND CLIENTS//===--*/
-    /*partners and clients set img width*/
-    #s7 img {width: 50%;}
-    /*partners and clients set rows width*/
-    
-    #s7 .globe{
-        flex: 25%; 
-        padding: 0px; 
-        order: 1;
-    }    
-    
-    #s7 .abrisocorp{
-        flex: 25%; /*flex item*/
-        padding: 0px; /*change distance between items*/ 
-        order: 2; /*set flex item order*/
-    }
-    #s7 .smart_start_ca{
-        flex: 25%; 
-        padding: 0px; 
-        order: 3;
-    }
-
-    #s7 .mko{flex: 25%; 
-        padding: 0px; 
-        order: 4;
-    }
 
 }
 /*=== END OF LAPTOP AND DESKTOP SECTION ===*/
