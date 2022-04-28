@@ -124,58 +124,7 @@ p {
   font-weight: bold;
 }
 
-/* Buttons */
-#s1 .phone {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  border-radius: 12px;    
-  color: white;
-  padding: 10px 38px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
 
-#s1 .phone {
-  background-color: #4CAF50; 
-  color: black; 
-  border: 2px solid #4CAF50;
-}
-
-#s1 .phone:hover {
-  background-color: white ;
-  color: black;
-}
-
-#s1 .email {
-  background-color: #f44336; /* Red */
-  border: none;
-  border-radius: 12px;    
-  color: white;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-#s1 .email {
-  background-color: #f44336; 
-  color: black; 
-  border: 2px solid #f44336;
-}
-
-#s1 .email:hover {
-  background-color: white;
-  color: black;
-}
 /*--===//END OF S1 HEADER//===--*/
 
 
@@ -337,7 +286,7 @@ footer{
 
     /* Buttons */
     #s1 .phone {
-      background-color: #4CAF50; /* Green */
+      background-color: #4CAF50;  /*Green*/ 
       border: none;
       border-radius: 12px;    
       color: white;
@@ -347,20 +296,9 @@ footer{
       display: inline-block;
       font-size: 15px;
       margin: 4px 2px;
-      transition-duration: 0.4s;
       cursor: pointer;
     }
 
-    #s1 .phone {
-      background-color: #4CAF50; 
-      color: black; 
-      border: 2px solid #4CAF50;
-    }
-
-    #s1 .phone:hover {
-      background-color: white ;
-      color: black;
-    }
 
     #s1 .email {
       background-color: #f44336; /* Red */
@@ -373,20 +311,8 @@ footer{
       display: inline-block;
       font-size: 15px;
       margin: 4px 2px;
-      transition-duration: 0.4s;
       cursor: pointer;
     }
-
-    #s1 .email {
-      background-color: #f44336; 
-      color: black; 
-      border: 2px solid #f44336;
-    }
-
-    #s1 .email:hover {
-      background-color: white;
-      color: black;
-    }    
     
     
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
@@ -408,7 +334,7 @@ footer{
 
 
 /* === TABLET ===*/
-@media all and (min-width: 600px) and (max-width: 799px){
+@media all and (min-width: 600px) and (max-width: 899px){
 
     /*--===/SCROLL TO TOP/===--*/
     #myBtn {font-size: 13px;}
@@ -426,6 +352,36 @@ footer{
     /*update paragraph size*/
     p{font-size: 14px;}    
     
+    /* Buttons */
+    #s1 .phone {
+      background-color: #4CAF50;  /*Green*/ 
+      border: none;
+      border-radius: 12px;    
+      color: white;
+      padding: 8px 38px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+
+    #s1 .email {
+      background-color: #f44336; /* Red */
+      border: none;
+      border-radius: 12px;    
+      color: white;
+      padding: 8px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }    
+        
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
     /*flex box update margin for address*/
     #s5 .flex-item-left-address{
@@ -442,7 +398,7 @@ footer{
 
 
 /*=== LAPTOP AND DESKTOP ===*/
-@media (min-width: 800px){
+@media (min-width: 900px){
     
     /*=== BODY BORDER LINE ===*/
     #body_elm{
@@ -450,6 +406,59 @@ footer{
         max-width: 1200px;
         /*align text in the middle - margin*/
         margin: 0 auto;
+    }
+    
+    /* Buttons */
+    #s1 .phone {
+      background-color: #4CAF50;  /*Green */
+      border: none;
+      border-radius: 12px;    
+      color: white;
+      padding: 10px 38px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    #s1 .phone {
+      background-color: #4CAF50; 
+      color: black; 
+      border: 2px solid #4CAF50;
+    }
+
+    #s1 .phone:hover {
+      background-color: white ;
+      color: black;
+    }
+
+    #s1 .email {
+      background-color: #f44336; /* Red */
+      border: none;
+      border-radius: 12px;    
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    #s1 .email {
+      background-color: #f44336; 
+      color: black; 
+      border: 2px solid #f44336;
+    }
+
+    #s1 .email:hover {
+      background-color: white;
+      color: black;
     }
     
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
