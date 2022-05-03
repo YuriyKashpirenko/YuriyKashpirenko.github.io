@@ -202,6 +202,7 @@ p {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
+  width:70%;
   background-color: darkgrey;
   color: white;
 }
@@ -241,11 +242,18 @@ p {
 
 /*--===//SECTION S6 PAYMENT METHOD//===---*/
 /* Image */
+
 #s6 {
-    background-color: white;
-    text-align: center;
+    background-color: white;/
     padding: 5px;
+    margin-bottom: 50px;
 }
+
+#s6 .center {
+  margin: auto;
+  width: 26%;
+}
+
 /*--===//END OF SECTION S6 PAYMENT METHOD//===---*/
 
 
@@ -493,6 +501,6 @@ footer{
     /*--===//SECTION S5 ADDRESS AND MAP//===--*/
     /*resize two flex boxes 50 by 50 percent*/
     #s5 .flex-item-left-address, .flex-item-right-map {flex:50%;}
-
+    
 }
 /*=== END OF LAPTOP AND DESKTOP SECTION ===*/
