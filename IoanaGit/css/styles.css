@@ -19,7 +19,7 @@ hgroup {
     margin-top:  50px;
     margin-bottom: 30px;
     text-align: center;
-    text-transform: capitalize;
+/*    text-transform: capitalize;*/
 }
 
 /*header h2 configurations*/
@@ -54,6 +54,12 @@ p {
     font-family: "HeiS ASC Simplified Chinese","HeiS ASC Simplified Chinese_n5","HeiT ASC Traditional Chinese","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #666;
     /*text-align:center;*/
+}
+
+/*bulet poits*/
+li {
+    font-family: "HeiS ASC Simplified Chinese","HeiS ASC Simplified Chinese_n5","HeiT ASC Traditional Chinese","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #666;
 }
 
 /*--===/SCROLL TO TOP/===--*/
@@ -218,6 +224,19 @@ p {
     margin-top: 0px;
 }
 
+/*phone link inside of the flex box*/
+#s5 a {
+  color: #666
+}
+
+#s5 a:link, a:visited {
+    text-decoration: none
+}
+
+#s5 a:hover, a:active {
+    text-decoration: underline
+} 
+
 #s5 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -251,7 +270,7 @@ p {
 
 #s6 .center {
   margin: auto;
-  width: 26%;
+  width: 50%;
 }
 
 /*--===//END OF SECTION S6 PAYMENT METHOD//===---*/
@@ -287,11 +306,13 @@ footer{
     /*update paragraph size*/
     p {font-size: 15px;}
     
+    /*update bulet size text*/
+    li {font-size: 15px;}
     
     /*--===//SECTION S1 IMAGE AND TEXT//===--*/
     /*  display half of the image  */
     #s1 .container .backgr{
-        margin-top: -37%;
+        margin-top: -25%;
     }  
 
 
@@ -339,20 +360,7 @@ footer{
     }
     
     
-    /*--===//SECTION S5 ADDRESS AND MAP//===--*/
-    /*phone link inside of the flex box*/
-    #s5 a {
-      color: #666
-    }
-
-    #s5 a:link, a:visited {
-        text-decoration: none
-    }
-
-    #s5 a:hover, a:active {
-        text-decoration: underline
-    }    
-    
+    /*--===//SECTION S5 ADDRESS AND MAP//===--*/   
     /*flex box update margin for address*/
     #s5 .flex-item-left-address{
         margin-top: 50px;
@@ -387,7 +395,16 @@ footer{
     }
     
     /*update paragraph size*/
-    p{font-size: 15px;}    
+    p{font-size: 15px;}   
+    
+    /*update bulet size text*/
+    li {font-size: 15px;}    
+
+    /*--===//SECTION S1 IMAGE AND TEXT//===--*/
+    /*  display half of the image  */
+    #s1 .container .backgr{
+        margin-top: -30%;
+    }    
     
     /* Buttons */
     #s1 .phone {
